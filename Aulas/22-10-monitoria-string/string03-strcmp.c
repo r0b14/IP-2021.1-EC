@@ -2,8 +2,9 @@
 #include <string.h>
 
 int main() {
-
+   // É Bastante usasdo para poder ordenar as strings
    // A funcao strcmp((string1, string2) == 0) -> Vai comprar as strings e retornar os valor boolean
+   
    char name1[50], name2[50];
    printf("1 name1= ");
    fgets(name1, 49, stdin);
