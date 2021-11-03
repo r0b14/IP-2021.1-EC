@@ -6,14 +6,12 @@ int main() {
    // A funcao strlen(string) vai dizer o tamanho da string junto ao SPACE.
    char name[50];
    printf("1 - What is your name: ");
-   scanf(" %49[^\n]", name);
-   //Colete os dados até aperta o ENTER -> "%[^\n]"
-   //é preciso colocar um caracter a menos por causa do \0
+   fgets(name, 49, stdin);
    printf("Your name is = %s\n", name);
    printf("Size of your name = %ld\n", strlen(name));
-   
 
    printf("------------------------------\n");
+
    // A funcao strcpy(variavel q recebe, string q vai repassar) vai atribuir strings
    // A funcao strcpy(String destino, string Origem) vai atribuir strings
    char name1[50];
