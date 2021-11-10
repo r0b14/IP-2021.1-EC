@@ -16,7 +16,6 @@ int main() {
       printf("Char convertido %d\n", charNumerico);
 
       charNumerico *= pow(10, str_size - index); // 1 * 10^(8-1) - 1(index) -> 1 * 10^6 = 1000000
-      printf("%d valor convertido = %d\n", index+1 ,charNumerico);
 
       numeroInt += charNumerico;
       ++index;
