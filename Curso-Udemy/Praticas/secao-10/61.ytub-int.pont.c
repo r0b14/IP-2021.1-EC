@@ -5,7 +5,7 @@ int main() {
 
    int x = 10;
    printf("\n%d\n", x); //mostrando o valor da variavel
-   printf("%d\n", &x); //mostrando o endereço da memoria que a variavel esta
+   printf("%d\n", &x); //mostrando o endereço da memoria que a variavel está
 
    /*
    Vamos criar um ponteiro para que aponte para x
