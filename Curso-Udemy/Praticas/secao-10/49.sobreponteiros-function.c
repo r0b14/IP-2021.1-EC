@@ -25,7 +25,7 @@ void somador(int *valorfunc) {
 
    //Depois de incrementar
    printf("********************\n");
-   printf("valor = %d\n", (*valorfunc += 1));
+   printf("valor = %d\n", (*valorfunc += 1));  //ou ++(*contador)
    printf("adss valor = %d\n", valorfunc);
    printf("---------------------\n");
 }
