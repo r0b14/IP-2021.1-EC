@@ -9,7 +9,15 @@
       que aponte para variavel. baseado no adss do ponteiro é inserido +1 ao 
       valor inserido e retorna o valor da variavel atualizado.
 */
-void somador(int* valorfunc) {
+
+/*                Aplicando conceito desenvolvido na aula
+   imagine que vc esta desenvoolvendo um game e sabemos que eh preciso ter vidas
+   e que essas vidas podem ser pedidas ou ganha. No caso da função somador ela vai
+   fazer a alteracao, so que esta alteracao eh na raiz da variavel o que na pratica
+   vai refletir que a vida foi ganha ou perdida nao so na funcion, mas sim no TODO.
+*/
+
+void somador(int *valorfunc) {
    //Antes de incrementar
    printf("--------------------\n");
    printf("valor = %d\n", *valorfunc);
@@ -22,7 +30,7 @@ void somador(int* valorfunc) {
    printf("---------------------\n");
 }
 
-
+//Funcao principal
 int main() {
 
    //Declarado a variavel ponteiro que aponta para int
@@ -37,7 +45,8 @@ int main() {
    //Mostrando o valor do endereço da variavel (&variavel)
    printf("Adss Valor = %d\n", &valor);
 
-   // o ponteiro esta recebendo o endereco da vari valor - Copia do valor
+   //Acionando a funcao somador
+   //O ponteiro esta recebendo o endereco da vari valor - Copia do valor
    somador(&valor);
 
    //Mostrando o valor pos alteracao
